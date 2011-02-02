@@ -9,9 +9,10 @@ gem 'jquery-rails'
 gem 'sqlite3-ruby', :require => 'sqlite3'
 
 group :development, :test do
-  gem 'capybara'
+  gem 'capybara', :git => 'https://github.com/remi/capybara.git'
   gem 'factory_girl_rails', '1.1.beta1'
   gem 'remarkable_activerecord', '>=4.0.0.alpha4'
   gem 'rspec-rails', '>= 2.4.1'
   gem 'steak'
+  gem 'launchy'
 end
