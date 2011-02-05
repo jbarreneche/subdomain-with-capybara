@@ -23,4 +23,17 @@ feature "Should Select Different Domains", %q{
     page.should have_content('HOST: subdomain.example.com')
   end
 
+  scenario "host change" do
+    Capybara.current_driver= :selenium
+    visit "/"
+    switch_to_domain "http://subdomain.lvh.me"
+    visit "/"
+    page.should have_content('Home')
+    page.should have_content('HOST: subdomain.lvh.me')
+    
+    click_link('Go somewhere')
+    save_and_open_page
+    page.should have_content('HOST: subdomain.lvh.me')
+  end
+
 end

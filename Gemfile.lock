@@ -1,8 +1,8 @@
 GIT
-  remote: https://github.com/remi/capybara.git
-  revision: 38fb4492aaa0f55d131688a5a01e25534243d5fa
+  remote: https://github.com/jbarreneche/capybara.git
+  revision: a52362a5f70d3495a309a8fcc1f05cb3e41b97b7
   specs:
-    capybara (0.4.0)
+    capybara (0.4.1.1)
       celerity (>= 0.7.9)
       culerity (>= 0.2.4)
       mime-types (>= 1.16)
@@ -10,7 +10,7 @@ GIT
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       selenium-webdriver (>= 0.0.27)
-      xpath (~> 0.1.2)
+      xpath (~> 0.1.3)
 
 GEM
   remote: http://rubygems.org/
